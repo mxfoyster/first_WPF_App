@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3/k7p4AOA8QyMjECEeTIh0iLTOZnRkV6DrlRUqHegadrJ4FFq+XaTQ1N1egw9B4Y49OS+A9sKO3Xz83clkpyjA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mxfoy\\source\\repos\\first_WPF_App\\first_WPF_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mxfoy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

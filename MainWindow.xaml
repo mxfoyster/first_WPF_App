@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:first_WPF_App" x:Name="MainWindow1"
+        x:Class="first_WPF_App.MainWindow"
+        mc:Ignorable="d"
+        Title="Paddle Length Calculator" Height="450" Width="800" Background="#FF868080" Icon="/paddle.bmp">
+    <Grid HorizontalAlignment="Center" Margin="0,60,0,124">
+        <TextBox x:Name="HeightBox" HorizontalAlignment="Left" Height="38" Margin="180,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" RenderTransformOrigin="0.487,1.129" FontSize="16" MaxLength="5" MaxLines="5"/>
+        <Label x:Name="HeightBoxLabel" Content="Enter Height in Cm's" HorizontalAlignment="Left" Height="38" Margin="10,24,0,0" VerticalAlignment="Top" Width="165" FontWeight="Bold" FontSize="16"/>
+        <RadioButton x:Name="WW_PaddleBtn" Content="White Water Paddle" HorizontalAlignment="Left" Height="21" Margin="25,80,0,0" VerticalAlignment="Top" Width="170" RenderTransformOrigin="0.5,1.352" FontWeight="Bold" FontSize="14" IsChecked="True"/>
+        <RadioButton x:Name="Touring_PaddleBtn" Content="Touring Paddle" HorizontalAlignment="Left" Height="21" Margin="200,80,0,0" VerticalAlignment="Top" Width="160" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="ResultBox" HorizontalAlignment="Center" Height="30" Margin="0,174,0,0" TextWrapping="Wrap" Text="Paddle Size: " VerticalAlignment="Top" Width="350" FontSize="16" FontWeight="Normal" IsReadOnly="True"/>
+        <Button x:Name="CalculateBtn" Click="CalculateLength" Content="CALCULATE" HorizontalAlignment="Center" Height="35" Margin="0,124,0,0" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.219,0.43" FontSize="16" FontWeight="Bold"/>
+        <Menu x:Name="MainMenu" Height="20" Margin="-200,-61,-200,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <MenuItem Header="File" Width="45" HorizontalAlignment="Center" Margin="10,0,0,0">
+                <MenuItem x:Name="ExitApp" Header="Exit" Click="FinishApp"/>
+            </MenuItem>
+            <MenuItem Header="Help" Width="45">
+                <MenuItem Header="Instructions" Click="DisplayInstructions"/>
+                <MenuItem Header="About" Click="DisplayAboutBox"/>
+            </MenuItem>
+
+        </Menu>
+
+    </Grid>
+</Window>
